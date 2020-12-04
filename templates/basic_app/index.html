@@ -1,0 +1,14 @@
+{% extends 'basic_app/base.html' %}
+
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Django Level Five</h1>
+      <p class="lead text-success">This is django level five project here we are workon user authentication signup/reg and login/logout</p>
+      {% if user.is_authenticated %}
+      <p class="text-danger">You have currently logged-in</p>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}
